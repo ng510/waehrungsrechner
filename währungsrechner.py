@@ -12,7 +12,7 @@ import tkinter as tk
 from tkinter import ttk
 
 # Klasse, um den Umrechnungsprozess zu beschreiben
-class WährungsRechner():
+class WaehrungsRechner():
     # Abfrage des Wechselkurses
     def __init__(self, url):
             # Laden der Seite und konvertieren in JSON Object
@@ -113,6 +113,6 @@ if __name__ == '__main__':
     #API
     url = 'https://v6.exchangerate-api.com/v6/d481e4df571f55dafd6bcffa/latest/EUR'
 
-    converter = WährungsRechner(url)
+    converter = WaehrungsRechner(url)
     App(converter)
     mainloop()
